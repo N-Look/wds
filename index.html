@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bradley Hair Express</title>
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/animations.css">
+    <link rel="stylesheet" href="public/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400&family=Inter:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <img src="public/images/logo.png" alt="Bradley Hair Express Logo" class="logo">
+            
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#booking">Booking</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" aria-label="Toggle mobile menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <nav class="mobile-nav" aria-hidden="true">
+                <div class="mobile-nav-content">
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#booking">Booking</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section id="about" class="content-wrapper">
+                <div class="image-container">
+                    <img src="public/images/bradley.png" alt="Bradley, the barber, sitting in his shop" class="barber-image">
+                </div>
+                <div class="text-container">
+                    <h1>About Bradley Hair Express</h1>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+                    <button class="learn-more-btn">Learn More</button>
+                </div>
+            </section>
+            
+        </main>
+    </div>
+    <section id="contact" class="contact-container">
+        <div class="contact-content-grid">
+            <img src="public/images/map.png" alt="Map to Bradley Hair Express" class="map-image">
+            <div class="contact-form-container">
+                <h2>Contact Us</h2>
+                <form>
+                    <div class="form-row">
+                        <input type="text" placeholder="First Name">
+                        <input type="text" placeholder="Last Name">
+                    </div>
+                    <textarea placeholder="Let us know what we can help with"></textarea>
+                    <button type="submit" class="form-submit-btn">Contact Bradley Hair Express</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>© 2025 Bradley Hair Express. All Rights Reserved</p>
+    </footer>
+    <script src="public/js/animations.js"></script>
+</body>
+</html> 

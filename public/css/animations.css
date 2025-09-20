@@ -1,0 +1,225 @@
+/* Page Load Animations */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Logo Pulse Effect */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* Button Ripple Effect */
+@keyframes ripple {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* Input Animation */
+@keyframes inputAnimation {
+    0% {
+        box-shadow: 0 0 0 0 rgba(99, 87, 84, 0.4);
+    }
+    100% {
+        box-shadow: 0 0 0 8px rgba(99, 87, 84, 0);
+    }
+}
+
+/* Initially hide elements for animation */
+.animate-on-load {
+    opacity: 0;
+}
+
+/* Header Animation */
+header {
+    animation: slideDown 0.8s ease-out forwards;
+}
+
+/* Main Content Animation */
+.content-wrapper {
+    animation: fadeInUp 1s ease-out 0.3s forwards;
+    opacity: 0;
+}
+
+/* Contact Section Animation */
+.contact-container {
+    animation: fadeInUp 1s ease-out 0.6s forwards;
+    opacity: 0;
+}
+
+/* Footer Animation */
+footer {
+    animation: fadeInUp 0.8s ease-out 0.9s forwards;
+    opacity: 0;
+}
+
+/* logo effect */
+.logo {
+    animation: pulse 4s ease-in-out infinite;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    animation-play-state: paused;
+    transform: scale(1.1);
+}
+
+/* Nav hover effects */
+nav a {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Underline animation */
+nav a::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #635754, #8B7D7A);
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+nav a:hover {
+    color: #635754;
+}
+
+/* Learn More Button */
+.learn-more-btn {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateZ(0);
+}
+
+.learn-more-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.6s ease;
+}
+
+.learn-more-btn:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(99, 87, 84, 0.3);
+    background: rgba(99, 87, 84, 0.4);
+    border-color: #635754;
+}
+
+.learn-more-btn:hover::before {
+    left: 100%;
+}
+
+.learn-more-btn:active {
+    transform: translateY(-1px) scale(1.01);
+    box-shadow: 0 4px 15px rgba(99, 87, 84, 0.4);
+}
+
+/* Ripple effect for buttons */
+.ripple {
+    position: relative;
+    overflow: hidden;
+}
+
+.ripple::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.6);
+    pointer-events: none;
+    animation: ripple 0.6s ease-out;
+}
+
+/* Form Submit Button */
+.form-submit-btn {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateZ(0);
+}
+
+.form-submit-btn:hover {
+    background-color: #D0D0D0;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.form-submit-btn:hover::before {
+    left: 100%;
+}
+
+.contact-form-container input:focus,
+.contact-form-container textarea:focus {
+    outline: none;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(99, 87, 84, 0.15);
+    animation: inputAnimation 0.6s ease-out;
+}
+
+/* Hover effects for contact form */
+.contact-form-container input:hover,
+.contact-form-container textarea:hover {
+    background-color: #EEEEEE;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(99, 87, 84, 0.1);
+}

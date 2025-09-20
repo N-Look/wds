@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+}
+
+.page-container {
+    position: relative;
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+    background-color: #FFFFFF;
+    padding-bottom: 40px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 70px;
+    top: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+}
+/* Navbar */
+.logo {
+    width: 227px;
+    height: auto;
+}
+
+.desktop-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.desktop-nav a {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+main {
+    padding: 0 70px;
+}
+
+/* About Section */
+.content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 83px;
+    margin-top: 20px;
+    padding-left: 0;
+}
+
+.image-container {
+    flex-shrink: 0;
+}
+
+.barber-image {
+    width: 400px;
+    height: 400px;
+}
+
+.text-container {
+    padding-top: 0px;
+}
+
+.text-container h1 {
+    font-family: 'Inria Serif', serif;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 72px;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.text-container p {
+    font-family: 'Inria Serif', serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.learn-more-btn {
+    box-sizing: border-box;
+    width: 262px;
+    height: 66px;
+    background: rgba(99, 87, 84, 0.28);
+    border: 2px solid #000000;
+    border-radius: 3px;
+    font-family: 'Inria Serif', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Contact Section */
+.contact-container {
+    padding: 40px 0;
+    background-color: #ececec;
+}
+
+.contact-content-grid {
+    display: flex;
+    align-items: center;
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.map-image-container {
+    flex: 1;
+}
+
+.map-image {
+    width: 423px;
+    height: auto;
+    border-radius: 10px;
+    
+}
+
+.contact-form-container {
+    width: 55%;
+} 
+
+.contact-form-container h2 {
+    font-family: 'Inria Serif', serif;
+    font-size: 60px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.contact-form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row input {
+    flex: 1;
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+    background-color: #E0E0E0;
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    font-family: 'Inria Serif', serif;
+    font-size: 18px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form-container textarea {
+    height: 160px;
+    resize: none;
+}
+
+.form-submit-btn {
+    background-color: #E0E0E0;
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    font-family: 'Inria Serif', serif;
+    font-size: 18px;
+    color: #000;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #ececec;
+}
+
+footer p {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #555;
+}
